@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elysian Heights Hotel - Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu-1">
+        <div class="hamburger" onclick="toggleMenu()">☰
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="skybar.html">Skybar</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="findus.html">Find us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Log in</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <header class="lobby-header"></header>
+
+    <main>
+        <div class="booking">
+            <form action="#" method="post">
+
+                <label for="date">Check in:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label>Room type:</label>
+
+                <select id="roomtpye" name="room type">
+                    <option value="Standard">Standard</option>
+                    <option value="doubleroom">Doubleroom</option>
+                    <option value="Suite">Suite</option>
+                    <option value="Presidential-suite">Presidential-suite</option>
+                </select>
+
+                <label for="name">First and lastname:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Book</button>
+
+            </form>
+        </div>
+
+        <div class="container-1">
+            <div class="item-1">
+                <h1>Room Features & Amenities</h1>
+                <p>
+                    All our rooms are designed to deliver exceptional comfort and luxury.
+                    Every room category includes a private bathroom equipped with both a
+                    bathtub and a rainfall shower for a relaxing, spa-inspired experience.
+                    Our Suites and Presidential Suites offer elevated indulgence, featuring
+                    a spacious master bathroom, a beautifully furnished living area, and
+                    access to a private sauna. These room types also include an in-room
+                    'jacuzzi for the ultimate sense of relaxation.
+
+                    Our Standard Rooms provide all essential comforts in an elegant and
+                    refined setting, featuring a modern bathroom with a bathtub and
+                    rainfall shower — but without jacuzzi features.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid-gallery">
+            <div><img src="1um.webp" alt="suite"></div>
+            <div><img src="2rum.webp" alt="suite2"></div>
+            <div><img src="3rum.webp" alt="suite3"></div>
+            <div><img src="rum4.webp" alt="suite4"></div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <p><strong>Elysian Heights Hotel</strong></p>
+        <p>
+            12 Al Rayhan Crescent<br>
+            Downtown District<br>
+            Dubai, United Arab Emirates
+        </p>
+        <p>© 2025 Elysian Heights Hotel. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".menu-1 ul").classList.toggle("open");
+        }
+    </script>
+</body>
+
+</html>

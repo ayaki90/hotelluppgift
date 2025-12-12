@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elysian Heights Hotel - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu-1">
+        <div class="hamburger" onclick="toggleMenu()">☰
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="skybar.html">Skybar</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="findus.html">Find us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Log in</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <header class="lobby-header"></header>
+
+    <main>
+        <div class="container-1">
+            <div class="item-1">
+                <h1>How to contact us</h1>
+                <p>Contact us for direct bookings, inquiries about check-in or check-out,
+                    or any questions before your stay, our team is always here to assist you</p>
+
+                <div class="info">
+                    <ul>
+                        <li>Address: Elysian Heights Hotel
+                            12 Al Rayhan Crescent, Downtown District
+                            Dubai, United Arab Emirates</li>
+                        <li>Phone: +971 4 589 32 00</li>
+                        <li> Email: contact@elysianheightshotel.com</li>
+                    </ul>
+                </div>
+
+                <p>Our concierge team is available 24/7 to ensure your experience is
+                    seamless from the moment you reach out.</p>
+            </div>
+        </div>
+        <div class="box-log-in">
+
+            <form action="#" method="post">
+                <label for="title">Your tilte:</label>
+                <select id="title" name="title">
+                    <option value="miss">Miss</option>
+                    <option value="mrs">Mr</option>
+                    <option value="mr">Mrs</option>
+                </select>
+
+                <label for="name">Lastname:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="textarea">How can we help you?"</label>
+                <textarea id="textarea" name="textarea" rows="5" cols="30" maxlength="200"></textarea>
+
+                <button type="submit">Send</button>
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <p><strong>Elysian Heights Hotel</strong></p>
+        <p>
+            12 Al Rayhan Crescent<br>
+            Downtown District<br>
+            Dubai, United Arab Emirates
+        </p>
+        <p>© 2025 Elysian Heights Hotel. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".menu-1 ul").classList.toggle("open");
+        }
+    </script>
+</body>
+
+</html>
